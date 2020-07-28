@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <!-- Protein Buddy Action Bar. -->
+    <style name="ProteinBuddyAppBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:background">@color/iconDetails</item>
+        <item name="android:tint">@color/iconBackground</item>
+        <item name="android:textColor">@color/iconBackground</item>
+    </style>
+
+    <!-- Menu Item Theme. -->
+    <style name="CustomPopupStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/iconDetails</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+        <item name="android:textColor">@color/iconBackground</item>
+    </style>
+
+
+</resources>

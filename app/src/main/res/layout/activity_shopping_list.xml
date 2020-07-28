@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingList"
+    android:background="@color/iconBackground">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+    <ImageView
+        android:id="@+id/shoppingListHat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/chef_hat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/app_bar"/>
+
+    <TextView
+        android:id="@+id/shoppingListHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shopping_list_header"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/iconDetails"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/shoppingListHat"/>
+
+    <ListView
+        android:id="@+id/shoppingListListView"
+        android:layout_width="357dp"
+        android:layout_height="360dp"
+        android:layout_below="@id/shoppingListHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+    </ListView>
+
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shoppingListListView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/shopping_list_hint"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/iconDetails"/>
+
+    <Button
+        android:id="@+id/btnMainMenu"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_main_menu"
+        android:layout_below="@id/subText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_button_1"
+        android:textColor="@color/iconBackground"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

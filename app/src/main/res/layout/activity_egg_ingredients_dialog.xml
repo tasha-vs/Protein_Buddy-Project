@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:padding="15dp"
+        android:background="@color/blueGreenLight">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/ingredients"
+            android:textColor="@color/dialog_details"
+            android:textSize="30sp"
+            android:textAllCaps="true"/>
+
+        <ListView
+            android:id="@+id/ingredientsListDialog"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dialog_details" />
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ingredientsListDialog"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ingredients_hint"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="@color/dialog_details"/>
+
+        <TextView
+            android:id="@+id/action_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/subText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="OK"
+            android:textColor="@color/dialog_details"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

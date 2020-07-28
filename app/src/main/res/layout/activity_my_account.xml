@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAccount"
+    android:background="@color/iconBackground">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+    <ImageView
+        android:id="@+id/myAccountHat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/chef_hat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/app_bar"/>
+
+    <TextView
+        android:id="@+id/myAccountHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_account_header"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/myAccountHat"
+        android:textColor="@color/iconDetails"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/myAccountUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtboxUsername"
+        android:layout_below="@id/myAccountHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textColor="@color/iconDetails"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/userAccountUsername"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/myAccountUsername"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/iconDetails"/>
+
+    <Button
+        android:id="@+id/btnEditUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_edit"
+        android:layout_below="@id/myAccountUsername"
+        android:layout_toEndOf="@+id/userAccountUsername"
+        android:layout_marginStart="25dp"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/iconDetails"
+        android:background="@drawable/login_button_2"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="New Username"
+        android:layout_below="@id/userAccountUsername"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btnUpdateUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_update"
+        android:layout_below="@id/btnEditUsername"
+        android:layout_toEndOf="@+id/editTextUsername"
+        android:layout_marginStart="25dp"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:background="@drawable/login_button_2"
+        android:textColor="@color/iconDetails"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/myAccountPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtboxPassword"
+        android:layout_below="@id/editTextUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textColor="@color/iconDetails"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/userAccountPassword"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/myAccountPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/iconDetails"/>
+
+    <Button
+        android:id="@+id/btnEditPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_edit"
+        android:layout_toEndOf="@id/userAccountPassword"
+        android:layout_below="@id/myAccountPassword"
+        android:visibility="visible"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/iconDetails"
+        android:textStyle="bold"
+        android:background="@drawable/login_button_2"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/userAccountPassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPersonName"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btnUpdatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_update"
+        android:layout_below="@id/btnEditPassword"
+        android:layout_toEndOf="@+id/editTextPassword"
+        android:layout_marginStart="25dp"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:background="@drawable/login_button_2"
+        android:textColor="@color/iconDetails"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_delete_account"
+        android:layout_below="@id/editTextPassword"
+        android:textColor="@color/iconDetails"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/login_buttons"
+        />
+
+    <Button
+        android:id="@+id/btnMainMenu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_main_menu"
+        android:layout_below="@id/editTextPassword"
+        android:layout_toEndOf="@id/btnDeleteAccount"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="48dp"
+        android:textColor="@color/iconDetails"
+        android:textStyle="bold"
+        android:background="@drawable/login_button_2"/>
+
+</RelativeLayout>

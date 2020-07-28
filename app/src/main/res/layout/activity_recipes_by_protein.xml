@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipesByProtein"
+    android:background="@color/iconBackground">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+    <ImageView
+        android:id="@+id/myLoginHat"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/contentDiscription"
+        app:srcCompat="@drawable/hat"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <Button
+        android:id="@+id/btnTofuRecipes"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/myLoginHat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/gradient_button_1"
+        android:text="@string/p1"
+        android:textColor="@color/iconBackground"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnEggsRecipes"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/p4"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnChickpeaRecipes"
+        android:background="@drawable/gradient_button_1"
+        android:textColor="@color/iconBackground"
+        android:textSize="18sp"
+        android:layout_width="300dp"/>
+
+    <Button
+        android:id="@+id/btnChickpeaRecipes"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnTofuRecipes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/p2"
+        android:textStyle="bold"
+        android:background="@drawable/gradient_button_1"
+        android:textColor="@color/iconBackground"
+        android:textSize="18sp"
+        android:layout_width="300dp" />
+
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEggsRecipes"
+        android:layout_centerHorizontal="true"
+        android:text="@string/recipes_by_protein_hint"
+        android:layout_marginTop="40dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@color/iconDetails"/>
+
+</RelativeLayout>

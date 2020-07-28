@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TofuRecipe1"
+    android:background="@color/iconBackground">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        />
+
+    <ImageView
+        android:id="@+id/imageMainMenu"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/contentDiscription"
+        app:srcCompat="@drawable/hat"
+        android:layout_below="@id/app_bar"/>
+
+    <TextView
+        android:id="@+id/p1r1RecipeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/p1r1"
+        android:textAlignment="center"
+        android:textColor="@color/iconDetails"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageMainMenu"/>
+
+    <TextView
+        android:id="@+id/p1r1DirectionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/directions"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/p1r1RecipeTitle"
+        android:textColor="@color/iconDetails"/>
+
+    <ListView
+        android:id="@+id/p1r1DirectionsList"
+        android:layout_width="357dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/p1r1DirectionsTitle"
+        android:textColor="@color/iconDetails"/>
+
+    <Button
+        android:id="@+id/btnViewIngredients"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:text="@string/btnIngredientsList"
+        android:layout_below="@id/p1r1DirectionsList"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_button_1"
+        android:textColor="@color/iconBackground"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnCalculateProtein"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/proteinButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnViewIngredients"
+        android:background="@drawable/gradient_button_1"
+        android:textColor="@color/iconBackground"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

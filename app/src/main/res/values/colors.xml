@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blueGreenLight">#ebfafa</color>
+    <color name="iconBackground">#DBFCF9</color>
+    <color name="iconDetails">#525252</color>
+    <color name="colourLightestLight">#BEDBD8</color>
+    <color name="med_blue_pastel">#5F7A81</color>
+    <color name="darker_blue">#2F4E56</color>
+    <color name="dialog_details">#283B3F</color>
+</resources>
