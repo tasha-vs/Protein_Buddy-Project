@@ -11,6 +11,7 @@ It contains a SQLite database.
 It was developed within Android Studio using Java.
 To download the user manual please go to https://drive.google.com/drive/folders/186UoLZAjvlPvQgoA-g1pIrAYUZ6BqK2d?usp=sharing and download the file as a word document. 
 NOTE: If you do not download this file and open it in word, it may be hard to read as google drive/docs has changed the format of this document. 
+Since this app contains a database, please ensure it is correctly attached before trying to run this application. 
 
 ## Conceptual framework:
 ![Alt text](https://user-images.githubusercontent.com/57430068/92544224-839d4500-f2a1-11ea-83ce-ad47929670aa.png)
